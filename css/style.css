@@ -243,11 +243,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 35px 5px 35px;
+    margin: 25px 42px 5px 42px;
     border-bottom: 1px solid #a7a5a5;
     padding-bottom: 10px;
     font-size: 14px;
-    width: 75%;
 }
 
 .photo-like .photos{
@@ -258,6 +257,7 @@ body{
 .photo-like .photos,
 .photo-like .likes{
     cursor: pointer;
+    padding: 0 10px;
     width: fit-content;
 }
 
@@ -279,8 +279,8 @@ body{
 }
 
 .img-list img{
-    height: 150px;
-    width: 105px;
+    height: 120px;
+    width: 100px;
     overflow: hidden;
     padding: 5px;
     border-radius: 15px;
@@ -289,19 +289,23 @@ body{
 .navbar{
   position: relative;
 }
+
 .bottom-bar{
   position: fixed;
+  bottom: 0;
   text-align: center;
-  margin-top: -228px;
+  margin-top: -165px;
   background: white;
   border-radius: 20px 20px 0 0;
+  border-top: 1px solid #a7a5a5;
+  width: 100%;
 }
 .icon{
-  font-size: 18px;
+  font-size: 25px;
   padding: 8px;
   margin: 6px;
   margin-top: 0;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
   border-radius: 100%;
   border: 7px solid #fff;
   cursor: pointer;
@@ -309,7 +313,7 @@ body{
 
 .add{
   transform: scale(1.25) translateY(-1em);
-  background: linear-gradient(135deg, #23f,#6589ff);
+  background: linear-gradient(135deg, #1e2250,#1e2250);
   border: 7px solid white;
   color: white;
 }
@@ -323,22 +327,12 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:767px){
     .task{
-        width: 90%;
+        width: 100%;
+    }
 
+    body{
+      padding: 0;
     }
 }
